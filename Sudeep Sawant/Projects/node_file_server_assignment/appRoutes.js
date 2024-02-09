@@ -1,35 +1,35 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const dataFilePath = path.join(__dirname, './db/users.txt');
 
 const User = require("./userModel")
-
-const dataFilePath = path.join(__dirname, './db/users.txt');
-// const dataFilePath2 = path.join(__dirname, './db/users2.txt');
-
-
 const router = express.Router();
 
-//fs.writeFileSync(dataFilePath, ""); 
-
-
+// create file if not exist
+if (!fs.existsSync(dataFilePath)) {
+    console.log("File not found. Creating users.txt file.");
+    fs.writeFileSync(dataFilePath, '', 'utf8');
+}
 
 const getUserFromFile = () => {
     try {
-        data = fs.readFileSync(dataFilePath, "utf8")
-        return JSON.parse(data)
+        const data = fs.readFileSync(dataFilePath, "utf8");        
+        if (!data) {
+            return [];
+        }
+        return JSON.parse(data);
+        
     } catch(error) {
-        console.error('Error reading file:', error);
-        return [];
+            console.error('Error reading file:', error);
+            return [];
     }
 }
 
 const writeUserToFile = (users) => {
     try {
-        // console.log("Data => " + users);
         fs.writeFileSync(dataFilePath, JSON.stringify(users, null, 2)); 
-        // data = "id: " + newUser.id + "name: "+newUser.name+"phone: "+newUser.phone + "age: " + newUser.age + "created_on: "+newUser.created_on 
-        // console.log(data);
+        
     } catch (error) {
         console.error('Error writing file:', error);
     }
@@ -80,7 +80,6 @@ router.put("/update/:id", (req, res)=>{
 router.delete("/delete/:id", (req, res)=>{
     const userIndex = users.findIndex(user => user.id === parseInt(req.params.id));
     if (userIndex === -1) return res.status(404).send('User not found.');
-
     users.splice(userIndex, 1);
     writeUserToFile(users);
     res.send('User deleted successfully');
