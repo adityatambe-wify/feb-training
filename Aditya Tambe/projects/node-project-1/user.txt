@@ -1,0 +1,18 @@
+Method: GET, Path: /users-api, Timestamp: 2024-02-09T06:43:21.574Z, Body: {"name":"monali","contact":"99866534","age":45}
+Method: GET, Path: /users-api/users, Timestamp: 2024-02-09T06:45:44.055Z, Body: {"name":"monali","contact":"99866534","age":45}
+Method: POST, Path: /users-api/users, Timestamp: 2024-02-09T06:47:04.755Z, Body: {"name":"monali","contact":"99866534","age":45}
+Method: POST, Path: /users-api/users, Timestamp: 2024-02-09T06:48:13.186Z, Body: {"name":"monali","phone_no":"99866534","age":45}
+Method: GET, Path: /users-api/users/1, Timestamp: 2024-02-09T06:48:32.322Z, Body: {"name":"monali","phone_no":"99866534","age":45}
+Method: GET, Path: /users-api/users, Timestamp: 2024-02-09T06:52:24.541Z, Body: {"name":"monali","phone_no":"99866534","age":45}
+Method: GET, Path: /users-api/users, Timestamp: 2024-02-09T06:52:37.567Z, Body: {"name":"monali","phone_no":"99866534","age":45}
+Method: POST, Path: /users-api/create-user, Timestamp: 2024-02-09T06:54:42.932Z, Body: {"name":"monali","phone_no":"99866534","age":45}
+Method: GET, Path: /users-api/users, Timestamp: 2024-02-09T06:54:54.182Z, Body: {"name":"monali","phone_no":"99866534","age":45}
+Method: POST, Path: /users-api/create-user, Timestamp: 2024-02-09T06:55:52.193Z, Body: {"name":"jainish","phone_no":"6874","age":30}
+Method: DELETE, Path: /users-api/users/1, Timestamp: 2024-02-09T06:56:15.058Z, Body: {"name":"jainish","phone_no":"6874","age":30}
+Method: DELETE, Path: /users-api/users/, Timestamp: 2024-02-09T06:56:18.571Z, Body: {"name":"jainish","phone_no":"6874","age":30}
+Method: GET, Path: /users-api/users/, Timestamp: 2024-02-09T06:56:23.662Z, Body: {"name":"jainish","phone_no":"6874","age":30}
+Method: PATCH, Path: /users-api/users/2, Timestamp: 2024-02-09T06:56:50.757Z, Body: {"name":"jainishSudeep lala","phone_no":"6874","age":30}
+Method: PUT, Path: /users-api/users/2, Timestamp: 2024-02-09T06:57:07.508Z, Body: {"name":"jainishSudeep lala","phone_no":"6874","age":30}
+Method: GET, Path: /users-api/users/1, Timestamp: 2024-02-09T06:57:25.745Z, Body: {"name":"jainishSudeep lala","phone_no":"6874","age":30}
+Method: GET, Path: /users-api/users/2, Timestamp: 2024-02-09T06:57:27.895Z, Body: {"name":"jainishSudeep lala","phone_no":"6874","age":30}
+Method: GET, Timestamp: 2024-02-09T06:58:18.756Z, Body: {"name":"jainishSudeep lala","phone_no":"6874","age":30}
