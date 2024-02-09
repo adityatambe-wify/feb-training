@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Ajay",
+    "phone": "01",
+    "age": 23,
+    "created_on": "2024-02-09T04:58:13.725Z"
+  },
+  {
+    "id": 2,
+    "name": "Vijay",
+    "phone": "03",
+    "age": 24,
+    "created_on": "2024-02-09T04:58:32.824Z"
+  },
+  {
+    "id": 3,
+    "name": "Aishwarya",
+    "phone": "03",
+    "age": 24,
+    "created_on": "2024-02-09T05:22:31.842Z"
+  }
+]
