@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 4,
+      "name": "shreya",
+      "contact": "54w",
+      "age": 72,
+      "createdAt": "2024-02-08T11:22:32.747Z"
+    },
+    {
+      "id": 5,
+      "name": "neil",
+      "contact": "547638w",
+      "age": 42,
+      "createdAt": "2024-02-08T11:30:46.290Z"
+    },
+    {
+      "id": 6,
+      "name": "bhargav",
+      "contact": "549798",
+      "age": 52,
+      "createdAt": "2024-02-08T11:35:47.894Z"
+    },
+    {
+      "id": 7,
+      "name": "jainisk",
+      "contact": "549798",
+      "age": 40,
+      "createdAt": "2024-02-08T11:52:24.204Z"
+    }
+  ]
+}
