@@ -9,7 +9,7 @@ const {
     fetchUsers
 } = require('../functions/userFn');
 
-// Retrive all users
+// Retrive all users from the db
 router.get('/users', (req, res) => {
     let users = fetchUsers()
     res.json(users);
@@ -52,3 +52,4 @@ router.delete('/users/:id', (req, res) => {
 });
 
 module.exports = router;
+// user route updated
